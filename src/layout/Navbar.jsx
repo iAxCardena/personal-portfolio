@@ -33,7 +33,7 @@ export const  Navbar = () => {
             }
         >
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a>
+                <a href="#" className="text-xl font-bold tracking-tight">
                     iAx<span className="text-primary">.</span>
                 </a>
 
