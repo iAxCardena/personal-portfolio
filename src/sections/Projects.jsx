@@ -1,6 +1,6 @@
 import { GitHub } from "@mui/icons-material"
 import { ArrowUp, ArrowUpRight } from "lucide-react"
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton.jsx"
 
 const projects = [
     {

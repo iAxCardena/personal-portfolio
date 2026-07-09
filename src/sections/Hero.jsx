@@ -1,6 +1,6 @@
 import { ArrowRight, ChevronDown, Download } from "lucide-react"
-import { Button } from "../components/Button"
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton"
+import { Button } from "../components/Button.jsx"
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton.jsx"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -27,7 +27,7 @@ export const Hero = () => {
             {/* Bg */}
             <div className="absolute inset-0">
                 <img
-                    src="/hero-bg.jpg"
+                    src="hero-bg.jpg"
                     alt="Hero image"
                     className="w-full h-full object-cover opacity-40"
                 />
