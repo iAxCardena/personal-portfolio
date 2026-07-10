@@ -1,10 +1,10 @@
-import Navbar from "@/layout/Navbar"
-import { Hero } from "@/sections/Hero"
-import { About } from "@/sections/About"
-import { Projects } from "@/sections/Projects"
-import { Experience } from "@/sections/Experience"
-import { Contact } from "@/sections/Contact"
-import { Footer } from "./layout/Footer"
+import Navbar from "@/layout/Navbar.jsx"
+import { Hero } from "@/sections/Hero.jsx"
+import { About } from "@/sections/About.jsx"
+import { Projects } from "@/sections/Projects.jsx"
+import { Experience } from "@/sections/Experience.jsx"
+import { Contact } from "@/sections/Contact.jsx"
+import { Footer } from "./layout/Footer.jsx"
 
 function App() {
   return (

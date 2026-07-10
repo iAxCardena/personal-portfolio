@@ -92,7 +92,7 @@ export const Hero = () => {
                         </div>
 
                         {/* Social Links */}
-                        <div className="flex items-center gap-4 animate-fade-in animation-400">
+                        <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
                             <span className="text-sm text-muted-foreground">Follow me: </span>
                             {[
                                 {icon: GitHubIcon, href: "https://github.com/iAxCardena"},
