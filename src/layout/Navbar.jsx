@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 
 const navLinks = [
     { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
+    // { href: "#projects", label: "Projects" },
     { href: "#experience", label: "Experience" },
     { href: "#contact", label: "Contact" },
 ]
@@ -53,9 +53,11 @@ export const  Navbar = () => {
                 </div>
 
                 {/* CTA Button */}
-                <div className="hidden md:block">
-                    <Button size="sm">Contact Me</Button>
-                </div>
+                <a href="#contact">
+                    <div className="hidden md:block">
+                        <Button size="sm">Contact Me</Button>
+                    </div>
+                </a>
 
                 {/* Mobile Menu Button */}
                 <button className="md:hidden p-2 text-foreground" onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
@@ -76,9 +78,12 @@ export const  Navbar = () => {
                             {link.label}
                         </a>
                     ))}
-                    <Button onClick={() => setIsMobileMenuOpen(false)}>
-                        Contact Me
-                    </Button>
+                    <a
+                        href="#contact">
+                        <Button onClick={() => setIsMobileMenuOpen(false)}>
+                            Contact Me
+                        </Button>
+                    </a>
                 </div>
             </div>}
         </header>

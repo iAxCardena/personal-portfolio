@@ -31,7 +31,7 @@ export const Hero = () => {
                     alt="Hero image"
                     className="w-full h-full object-cover opacity-40"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-backgroun/80 to backgorund"/>
+                <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to background"/>
             </div>
 
             {/* Green Dots */}
@@ -83,12 +83,17 @@ export const Hero = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
-                                Contact Me
-                            </Button>
-                            <AnimatedBorderButton>
-                                <Download className="w-5 h-5"/> Download CV
-                            </AnimatedBorderButton>
+                            <a
+                                href="#contact">
+                                <Button size="lg">
+                                    Contact Me
+                                </Button>
+                            </a>
+                            <a href="https://iaxcardena.github.io/personal-portfolio/Igor%20Alexandre%20Cardena%20de%20Souza.pdf">
+                                <AnimatedBorderButton>
+                                        <Download className="w-5 h-5"/> Download CV
+                                </AnimatedBorderButton>
+                            </a>
                         </div>
 
                         {/* Social Links */}
@@ -121,8 +126,11 @@ export const Hero = () => {
                             />
                             <div className="relative glass rounded-3xl p-2 glow-border">
                                 <img 
-                                    src="https://github.com/iAxCardena.png"
+                                    src="hero_profile.jpg"
                                     alt="Igor Alexandre Cardena de Souza"
+                                    loading="eager"
+                                    fetchPriority="high"
+                                    decoding="async"
                                     className="w-full aspect-[4/5] object-cover rounded-2xl"
                                 />
 
@@ -134,7 +142,7 @@ export const Hero = () => {
                                     </div>
                                 </div>
                                 {/* Stats Badge */}
-                                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py3 animate-float animation-delay-500">
+                                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                                     <div className="text-2xl font-bold text-primary">4+</div>
                                     <div className="text-sm">Years Exp.</div>
                                 </div>
